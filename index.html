@@ -160,9 +160,23 @@
           <button id="down">down</button>
         </div>
       </div>
+      <div class="w100">
+        <input type="checkbox" id="showB" value="showB" onclick="hideB()" checked>Zobrazit stěnu B<br>
+        <script>
+          function hideB()
+          {
+            if (document.getElementById('showB').checked)
+            {
+                document.getElementsByClassName("B-2d")[0].classList.remove("hide");
+            } else {
+                document.getElementsByClassName("B-2d")[0].classList.add("hide");
+            }
+          }
+        </script>
+      </div>
     </div>
 
-    <div class="screen-3d">
+    <div class="screen-3d hide">
       <div class="front">
         <div class="w100 f-l">
           <div style="margin-left: 50px;" class="w120 t-center">
