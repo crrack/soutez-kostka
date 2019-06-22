@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rubikova kostka</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="menu">
+      <button onclick="screen2d()">2D</button>
+      <button onclick="screen3d()">3D</button>
+      <script >
+        function screen2d()
+        {
+          document.getElementsByClassName("screen-3d")[0].classList.add("hide");
+          document.getElementsByClassName("screen-2d")[0].classList.remove("hide");
+        }
+        function screen3d()
+        {
+          document.getElementsByClassName("screen-2d")[0].classList.add("hide");
+          document.getElementsByClassName("screen-3d")[0].classList.remove("hide");
+        }
+      </script>
+    </div>
+    <div class="hide">
+      <div class="side mr20" id="1">
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+        <div class="block white">U<div class="tooltip">Bílá</div></div>
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+        <div class="block white"><div class="tooltip">Bílá</div></div>
+      </div>
+
+      <div class="side mr20" id="2">
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+        <div class="block green">L<div class="tooltip">Zelená</div></div>
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+        <div class="block green"><div class="tooltip">Zelená</div></div>
+      </div>
+
+      <div class="side mr20" id="3">
+        <div class="block red"><div class="tooltip">Červená</div></div>
+        <div class="block red"><div class="tooltip">Červená</div></div>
+        <div class="block red"><div class="tooltip">Červená</div></div>
+
+        <div class="block red"><div class="tooltip">Červená</div></div>
+        <div class="block red">F<div class="tooltip">Červená</div></div>
+        <div class="block red"><div class="tooltip">Červená</div></div>
+
+        <div class="block red"><div class="tooltip">Červená</div></div>
+        <div class="block red"><div class="tooltip">Červená</div></div>
+        <div class="block red"><div class="tooltip">Červená</div></div>
+      </div>
+
+      <div class="side mr20" id="4">
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+        <div class="block blue">R<div class="tooltip">Modrá</div></div>
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+        <div class="block blue"><div class="tooltip">Modrá</div></div>
+      </div>
+
+      <div class="side mr20" id="5">
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+        <div class="block orange">B<div class="tooltip">Oranžová</div></div>
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+        <div class="block orange"><div class="tooltip">Oranžová</div></div>
+      </div>
+
+      <div class="side mr20" id="6">
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+        <div class="block yellow">D<div class="tooltip">Žlutá</div></div>
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+        <div class="block yellow"><div class="tooltip">Žlutá</div></div>
+      </div>
+    </div>
+
+    <div class="screen-2d">
+      <div class="w100">
+        <div style="margin-left: 210px;" class="w120 t-center">
+          <button id="up">up</button>
+        </div>
+      </div>
+      <div class="w100">
+        <div style="margin-left: 70px; padding-top: 100px;" class="w120 h120 t-right">
+          <button id="rotate-right">rotate right</button>
+        </div>
+
+        <div class="U-2d side">
+
+        </div>
+      </div>
+      <div class="w100">
+        <div style="width: 40px; padding-top: 50px;" class="h120 t-right">
+          <button id="left">left</button>
+        </div>
+
+        <div class="L-2d side">
+
+        </div>
+        <div class="F-2d side">
+
+        </div>
+        <div class="R-2d side">
+
+        </div>
+        <div class="B-2d side">
+
+        </div>
+
+        <div style="width: 40px; padding-top: 50px;" class="h120">
+          <button id="right">right</button>
+        </div>
+
+      </div>
+      <div class="w100">
+        <div class="D-2d side" style="margin-left: 210px;">
+
+        </div>
+        <div class="w120 h120">
+          <button id="rotate-left">rotate left</button>
+        </div>
+      </div>
+      <div class="w100">
+        <div style="margin-left: 210px;" class="w120 h120 t-center">
+          <button id="down">down</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen-3d">
+      <div class="front">
+        <div class="w100 f-l">
+          <div style="margin-left: 50px;" class="w120 t-center">
+            <button id="up">up</button>
+          </div>
+        </div>
+        <div class="w100 f-l">
+          <div class="U-2d side">
+
+          </div>
+          <div style="margin-top: 20px;width: 70px;">
+            <button id="rotate-left">rotate left</button>
+          </div>
+        </div>
+        <div class="w100">
+          <div style="width: 40px;" class="h120 t-right">
+            <button id="left">left</button>
+          </div>
+
+          <div class="L-2d side">
+
+          </div>
+          <div class="F-2d side">
+
+          </div>
+          <div style="width: 40px; padding-top: 50px;" class="h120">
+            <button id="right">right</button>
+          </div>
+        </div>
+        <div class="w100 f-l">
+          <div style="    margin-top: -10px;margin-left: 50px;width: 70px;" class="h120 t-right">
+            <button id="rotate-right">rotate right</button>
+          </div>
+          <div style="margin-left: 0px;" class="w120 h120 t-center">
+            <button id="down">down</button>
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="w100">
+          <div class="R-2d side">
+
+          </div>
+        </div>
+        <div class="w100">
+          <div class="B-2d side">
+
+          </div>
+          <div class="D-2d side">
+
+          </div>
+        </div>
+      </div>
+      <div class="w100">
+      </div>
+    </div>
+
+    <script>
+      window.onload = start();
+
+      function start()
+      {
+        load2d('U-2d','1');
+        load2d('L-2d','2');
+        load2d('F-2d','3');
+        load2d('R-2d','4');
+        load2d('B-2d','5');
+        load2d('D-2d','6');
+      }
+
+      function load2d(selector, id)
+      {
+        document.getElementsByClassName(selector)[0].innerHTML = document.getElementById(id).innerHTML;
+        document.getElementsByClassName(selector)[1].innerHTML = document.getElementById(id).innerHTML;
+      }
+    </script>
+
+
+  </body>
+</html>

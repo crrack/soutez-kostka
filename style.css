@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+.block:hover > .tooltip {
+  display:block;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #d0d0d0;
+  padding: 3px 10px;
+  border: 1px solid #000;
+  left: 20px;
+  top: 5px;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.hide{
+  display: none !important;
+}
+.f-l {
+ float: left;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w120 {
+  width: 120px;
+}
+
+.h120 {
+  height: 120px;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.green {
+  background: #8bc34a !important;
+}
+
+.blue {
+  background: #03a9f4 !important;
+}
+
+.red {
+  background: #f44336 !important;
+}
+
+.orange {
+  background: #ff9800 !important;
+}
+
+.yellow {
+  background: #ffeb3b !important;
+}
+
+.white {
+  background: #ffffff !important;
+}
+
+.side {
+  width:  120px;
+  height: 120px;
+  float: left;
+}
+
+.block {
+  width: 40px;
+  height: 40px;
+  background: #cecece;
+  border: 1px solid #000;
+  display: block;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 6px;
+  position: relative;
+}
+
+.screen-2d {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-top: 100px;
+}
+
+.screen-2d > div {
+  float: left;
+}
+
+.screen-3d {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-top: 100px;
+}
+
+.screen-3d .tooltip {
+  display: none !important;
+}
+
+.screen-3d > .front {
+  width: 400px;
+}
+
+.screen-3d > .back {
+  margin-top: 60px;
+}
+
+.screen-3d > div {
+  float: left;
+}
+
+.screen-3d  .U-2d {
+  transform: skew(45deg);
+  height: 60px;
+  margin-bottom: -20px;
+  margin-left: 100px;
+}
+
+.screen-3d  .U-2d .block {
+  height: 20px;
+  padding-top: 0;
+  font-size: 18px;
+}
+
+.screen-3d  .L-2d {
+  transform: skew(0,45deg);
+  width: 60px;
+  margin-top: -10px;
+}
+
+.screen-3d  .L-2d .block {
+  width: 20px;
+}
+
+.screen-3d  .F-2d {
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
+.screen-3d  .R-2d {
+  transform: skew(0,-45deg);
+  width: 60px;
+  margin-top: 40px;
+}
+
+.screen-3d  .R-2d .block {
+  width: 20px;
+}
+
+.screen-3d  .B-2d {
+  margin-left: -10px;
+}
+
+.screen-3d  .D-2d {
+  transform: skew(-45deg);
+  height: 60px;
+  margin-top: -10px;
+  margin-left: -40px;
+}
+
+.screen-3d  .D-2d .block {
+  height: 20px;
+  padding-top: 0;
+  font-size: 18px;
+}
+
+.w100 > div {
+  float: left;
+  margin: 10px;
+}
+
+.menu > button {
+  padding: 20px;
+}
